@@ -1,0 +1,139 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  background-color: #1b1b1b;
+}
+.wrapper {
+  padding: 93px 0;
+  width: 40%;
+  margin: 0 auto;
+}
+.hide-done .checked{
+  display: none;
+}
+.main-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #111;
+  height: fit-content;
+}
+.main-block h1 {
+  color: #d17f0f;
+}
+.sort-block {
+  display: flex;
+  padding: 5px;
+}
+#sort-block button {
+  border-radius: 5px;
+  border-color: #f9f9f9;
+  padding: 5px;
+  margin: 6px;
+  background-color: #f9f9f9;
+  color: #555;
+}
+#sort-block button:hover {
+  color: #d17f0f;
+  border-color: #d17f0f;
+}
+#sort-block button.enabled {
+  border-color: #d17f0f;
+  background-color: #d17f0f;
+  color: #f9f9f9;
+}
+#sort-block button.disabled {
+  border-color: #63605b;
+  opacity: 0.7;
+  background-color: #63605b;
+  cursor: not-allowed;
+  color: #f9f9f9;
+}
+.input-container {
+  padding: 20px;
+  display: flex;
+  width: 100%;
+}
+.input-container input{
+  margin: 0;
+  border: none;
+  border-right: 3px solid #bbb;
+  border-radius: 0;
+  width: 70%;
+  padding: 10px;
+  font-size: 16px;
+}
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+.addBtn:hover {
+  color: #d17f0f;
+}
+
+ul#task-List {
+  margin: 40px 0;
+  list-style-type: none;
+}
+li.task {
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 20px 0;
+}
+li.task.checked, li.task.overdue.checked{
+  color:#f9f9f9;
+  background-color: #111;
+}
+li.task.checked h2, li.task.checked p, li.task.overdue.checked h2, li.task.overdue.checked p, li.task.overdue.checked p.date.overdue {
+  color:#f9f9f9;
+  text-decoration: line-through;
+}
+li.task.overdue {
+  color:#f9f9f9;
+  background-color: rgb(124, 22, 22);
+}
+
+.head {
+  display: flex;
+  border-bottom: 3px dotted #bbb;
+}
+
+li.task .head h2 {
+  width: 90%;
+  padding-left: 10px;
+}
+li.task div.task-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 5px;
+}
+li.task p {
+  padding: 10px;
+}
+li.task.overdue p.date.overdue{
+  color: red;
+}
+input.chBox {
+  margin: 8px 0 0px 0;
+}
+/* 
+#d17f0f
+#d9d9d9
+#f9f9f9 */

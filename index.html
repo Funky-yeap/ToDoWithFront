@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=375px, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/styles.css" rel="stylesheet" type="text/css" />
+    <title>ToDo</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="wrapper">
+        <div id="" class="main-block">
+          <h1>My To Do List</h1>
+          
+          <form class="input-container" name="tasks">
+            <input type="text" name="name" id="nameInput" placeholder="Task name" />
+            <input type="text" name="description" id="descriptionInput" placeholder="Task description" />
+            <input type="date" name="due_date" id="descriptionInput" placeholder="Date" />
+            <button type="submit" class="addBtn">Add</button>
+          </form>
+          <div id="sort-block">
+            <button id="btn1" class="button">Only undone tasks</button>
+          </div>
+        </div>
+
+        <ul id="task-List">
+          <template id="task-li">
+            <li class="task">
+              <div class="head">
+                  <input type="checkbox" class="chBox" onchange="setStatus(this)">
+                  <h2 class="title"></h2>
+                  <a onclick="removeTask(this)">🗑️</a>
+              </div>
+              <div class="task-info">
+                <p class="description"></p>
+                <p class="date"></p>
+              </div>
+            </li>
+          </template>
+          
+
+        </ul>
+      </div>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
